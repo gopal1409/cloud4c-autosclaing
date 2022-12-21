@@ -44,6 +44,10 @@ resource "azurerm_lb_rule" "example" {
 
 }
 
+output "web_lb_public_ip_address" {
+  description = "Web Load Balancer Public Ip"
+  value = azurerm_public_ip.web_lbpublicip.ip_address
+}
 #3associate the nic card with your load balancer. 
 /*
 resource "azurerm_network_interface_backend_address_pool_association" "web_nic_lb_associate" {
