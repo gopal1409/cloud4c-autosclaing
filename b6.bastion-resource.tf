@@ -1,4 +1,4 @@
-
+/*
 #create websubnet
 resource "azurerm_subnet" "bastionsubnet" {
   name = "${azurerm_virtual_network.vnet.name}-${var.bastion_subnet_name}"
@@ -51,3 +51,4 @@ resource "azurerm_network_security_rule" "bastion_nsg_rule_inbound" {
   }
 
 
+*/
